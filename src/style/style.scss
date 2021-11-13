@@ -1,5 +1,22 @@
 @charset 'utf-8';
 // добавить миксин для webp изображений
 
-/*Обнуление стилей*/
-@import 'base/reset';
+// контейнеры
+.container-wide {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px 30px;
+}
+
+@import 
+  'abstracts/mixins',
+  'abstracts/variables';
+
+@import 
+  'base/reset';
+
+@import 
+  'components/navigation';
+
+@import 
+  'layout/header';

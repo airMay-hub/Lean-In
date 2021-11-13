@@ -1,0 +1,21 @@
+.navigation {
+
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    @include font (
+      $open-sans, 
+      bold, 
+      $navigation-font-size, 
+      $navigation-line-heigth, 
+      $navigation-color);
+  }
+}
