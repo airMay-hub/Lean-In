@@ -5,3 +5,66 @@
   line-height: $height;
   color: $color;
 }
+
+@mixin section ($background, $width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+  background-color: $background;
+}
+
+@mixin size ($width, $height: auto, $margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
+  width: $width;
+  height: $height;
+}
+
+@mixin position ($position: static, $top: 0, $left: 0, $bottom: auto, $right: auto) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin flex ($justify, $align: center, $direction: row, $wrap: nowrap, $display: flex) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin burger ($top, 
+  $height: 10%, $width: 100%, 
+  $position: absolute, $left: 0, 
+  $background: $dark-grey, 
+  $transition: all 0.3s ease 0s) {
+  height: $height;
+  width: $width;
+  position: $position;
+  top: $top;
+  left: $left;
+  background-color: $background;
+  transition: $transition;
+}
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+
+  } @else {
+  @error 'Не указано значение для `#{$breakpoint}`. '
+      + 'Пожалуйста, убедитесь, что точка останова объявлена в карте `$breakpoints`.';
+  }
+}

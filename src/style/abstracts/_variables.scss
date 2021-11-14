@@ -1,27 +1,54 @@
+$breakpoints: (
+  'max-small': (max-width: 479.98px),
+  'max-medium': (max-width: 767.98px),
+  'max-large': (max-width: 991.98px),
+  'min-small': (min-width: 479.98px),
+  'min-medium': (min-width: 767.98px),
+  'min-large': (min-width: 991.98px),
+);
+
 // из прошлого проекта
 $md2: 991.98;
 $md3: 767.98;
-// $md4: 479.98;
+$md4: 479.98;
 $maxWidth: 1080;
 $ab: 720 / 1440 * 100vw;
 
-// семейство шрифтов
+// шрифт
 $open-sans: 'Open Sans';
-
-// размеры шрифтов
-$fz20: 20px;
-$lh30: 30px;
+$pt-sans: 'PT Sans';
 
 // цвета
 $dark-grey: rgba(51, 51, 51, 1);
 $grey: rgba(79, 79, 79, 1);
+$white: rgba(255, 255, 255, 1);
+$light-blue: linear-gradient(135deg, 
+  rgba(125, 151, 244, 1) 0%, 
+  rgba(125, 187, 244, 1) 10%, 
+  rgba(255, 255, 255, 1) 70%);
+$middle-blue: rgba(198, 223, 249, 1);
+$dark-blue: rgba(125, 155, 244, 1);
 
-// навигация
-$navigation-font-size: $fz20;
-$navigation-line-heigth: $lh30;
+// Фон
+$background-main-1: $white;
+$background-main-2: $light-blue;
+$background-start: $middle-blue;
+$background-footer: $dark-blue;
+
+
+// текст навигации
+$navigation-font-family: $open-sans;
+$navigation-font-size: 20px;
+$navigation-line-heigth: 30px;
 $navigation-color: $dark-grey;
 
 // заголовки
 $main-heading-color: $dark-grey;
 
+// текст
 $main-paragraph-color: $grey;
+$small-font-size: 16px;
+
+// подвал
+$footer-font-color: $white;
+$footer-line-hight: 26px;

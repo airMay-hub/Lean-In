@@ -1,34 +1,38 @@
 .footer {
-  
   flex: 0 0 auto;
-  background-color: #7d9bf4;
+  background-color: $background-footer;
   
   &__content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 116px 37px 30px;
+    @include flex (space-between);
+    padding: 20px 37px 30px;
+
+    @include respond-to('max-small') {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 37px;
+    }
   }
 
   &__logo {
-    height: 100%;
-    margin: 0 0 auto;
+    margin: 0 30px auto 0;
+
+    @include respond-to('max-small') {
+      margin: 0 0 30px;
+    }
   }
 
   &__body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    color: #ffffff;
+    @include flex (center, flex-end, column);
+
+    @include respond-to('max-small') {
+      align-items: flex-start;
+    }
   }
 
   &__text {
-    font-family: PT Sans;
-    font-size: 16px;
-    line-height: 20px;
-    margin: -4px 0 0 auto;
-
-    &:nth-child(1) {
-      margin-bottom: 4px;
-    }
+    @include font ($pt-sans, normal, 
+                $small-font-size, 
+                $footer-line-hight, 
+                $footer-font-color);
   }
 }
