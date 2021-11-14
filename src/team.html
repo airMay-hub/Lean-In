@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Главная</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      @@include("components/_header.html")
+      <main class="main">
+        <section class="team">
+          <div class="content-narrow">
+            <div class="team__flex">
+              <h2 class="team__title">Команда по работе с Lean </h2>
+              <p class="team__text">Нас объединяет стремление развить и укрепить бизнес наших клиентов, сопровождая их на пути Lean-трансформации и внедрения улучшений. Это стало возможным благодаря сочетанию в реализуемых проектах лучших практик традиционного менеджмента и Lean-методологии.</p>
+              <div class="team__flex-2">
+                <div class="team__img-wrap"><img src="assets/img/team.png" alt="" class="team__img"></div>
+                <div class="team__list team-list">
+                  <div class="team-list__flex">
+                    <h3 class="team-list__title">Наша команда – это сообщество Lean-практиков и экспертов в таких областях как </h3>
+                    <ul class="team-list__list">
+                      <li class="team-list__item">управление производством</li>
+                      <li class="team-list__item">продажи и маркетинг</li>
+                      <li class="team-list__item">управление финансами</li>
+                      <li class="team-list__item">управление ИТ</li>
+                      <li class="team-list__item">стандартизация и управление качеством</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="team-arrow">
+          <img src="assets/img/arrow-team.jpg" alt="" class="team-arrow__img">
+        </div>
+      </main>
+    </div>
+    @@include("components/_footer.html")
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

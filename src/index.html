@@ -8,11 +8,189 @@
   <title>Главная</title>
 </head>
 <body>
-  @@include('layout/_header.html')
-  <main>
+  <div class="wrapper">
+    <div class="content">
+      @@include("components/_header.html")
+      <main class="main">
+        <div class="white">
+          <section class="introduction">
+            <img class="introduction__img introduction__img-4" src="assets/img/laead_block_blue.png" alt="image">
+            <img class="introduction__img introduction__img-3" src="assets/img/lead_block.png" alt="">
+            <img class="introduction__img introduction__img-1" src="assets/img/arrow_down.png" alt="">
+            <img class="introduction__img introduction__img-2" src="assets/img/arrow_big.png" alt="">
+            <div class="content-narrow">
+              <div class="introduction__flex">
+                <h2 class="introduction__title">Lean-трансформация <span>Вашего бизнеса.</span> Мы знаем как</h2>
+                <p class="introduction__text">Узнайте как получить до 90% компенсации стоимости затрат на консалтинговый проект</p>
+                <a class="introduction__link button-yellow" href="small_business_consultation.html">Посмотреть условия</a>
+              </div>
+            </div>
+          </section>
+          <section class="use">
+            <div class="content-narrow">
+              <h3 class="use__title title">Где можно применить Lean</h3>
+              <div class="use__body">
+                <div class="use__flex">
+                  <div class="use__column">
+                    <a data-goto=".sales" href="#" class="use__item item">
+                      <div data-goto=".sales" class="item__flex">
+                        <div class="item__img-wrap">
+                          <img data-goto=".sales" src="assets/img/use.png" width="120px" alt="" class="item__img">
+                        </div>
+                        <p data-goto=".sales" class="item__text">Lean в продажах</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="use__column">
+                    <a data-goto=".finance" href="#" class="use__item item">
+                      <div data-goto=".finance"  class="item__flex">
+                        <div class="item__img-wrap">
+                          <img data-goto=".finance"  src="assets/img/use-1.png" width="120px" alt="" class="item__img">
+                        </div>
+                        <p data-goto=".finance"  class="item__text">Lean в финансах</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="use__column">
+                    <a data-goto=".it" href="#" class="use__item item">
+                      <div data-goto=".it"  class="item__flex">
+                        <div class="item__img-wrap">
+                          <img data-goto=".it"  src="assets/img/use-2.png" width="125px" alt="" class="item__img">
+                        </div>
+                        <p data-goto=".it"  class="item__text">Lean в IT</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <img src="assets/img/use_arrow.jpg" alt="img">
+        </div>
+        <div class="blue blue-indent">
+          <section class="sales">
+            <div class="content-narrow">
+              <div class="sales__flex">
+                <div class="sales__column column">
+                  <div class="column__flex">
+                    <h3 class="column__title title">Lean в продажах</h3>
+                    <p class="column__text">Внедрение бережливого производства приводит к достижению<br> впечатляющих результатов в отношении основых показателей продаж. <strong>Благодаря внедрению системы LEAN вы сможете:</strong></p>
+                    <ul class="column__list">
+                      <li class="column__item">Сократить время закрытия сделки</li>
+                      <li class="column__item">Обслуживать больше клиентов за меньшее время</li>
+                      <li class="column__item">Устранить зависмоть от “звезд”</li>
+                      <li class="column__item">Снизить себестоимости продаж за счет сокращения сроков обработки запроса</li>
+                      <li class="column__item">Избавиться от операционных ошибок</li>
+                      <li class="column__item">Улучшить качественные показатели:<br> повышение конверсии, снижение времени обработки запросов и закрытия сделок, снижение стоимости лида</li>
+                      <li class="column__item">Снизить зависимость от колебаний спроса (выравнять поток) </li>
+                      <li class="column__item">Минимизировать потери: избыточная документация, неэффективная коммуникация, лишние внутренние согласования, необоснованные скидки</li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="sales__column">
+                  <div class="sales__img-wrap">
+                    <img src="assets/img/lean_in_sales.png" alt="" class="sales__img">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          @@include("components/_start.html")
+        </div>
+        <div class="white white-finance">
+          <div class="arrow-down-blue">
+            <div class="arrow-up-small">
+              <img src="assets/img/arrow_up.png" alt="" class="arrow-up-small__img">
+            </div>
+          </div>
+          <section class="finance">
+            <div class="content-narrow">
+              <div class="finance__flex">
+                <div class="finance__body">
+                  <div class="finance__body-flex">
+                    <h3 class="finance__title title">Lean в финансах</h3>
+                    <p class="finance__text">В управлении финансами ситсема позволяет более точно оценить влияние Lean-трансформации на стратегические показатели компании через использование альтернативных методов управленческого учета.  </p>
+                    <div class="finance__list list-fnnc">
+                      <h4 class="list-fnnc__list-title">Lean учёт это:</h4>
+                      <ul class="list-fnnc__list">
+                        <li class="list-fnnc__item">Оценка результативности внедрения лин</li>
+                        <li class="list-fnnc__item">Оценка внедряемых изменений</li>
+                        <li class="list-fnnc__item">"Бережливый офис"</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="finance__img-wrap">
+                  <img src="assets/img/Lean_in_finance.png" alt="" class="finance__img">
+                </div>
+              </div>
+            </div>
+          </section>
+          <aside class="discuss">
+            <div class="content-width">
+              <div class="discuss__flex">
+                <div class="discuss__text">
+                  Мы можем дать оценку ситуации именно по вашему случаю. Чтобы получить ответы на ваши вопросы переходите на страницу контактов (можно перейти нажав на конпку ниже) и свяжитесь с нами наиболее удобным для вас способом:
+                </div>
+                <a href="" class="discuss__link button-yellow">Обсудить ваш вопрос</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="blue">
+          <div class="arrow-down-white white-arrow-finance">
+            <div class="arrow-up-finance">
+              <img src="assets/img/arrow_up.png" alt="" class="arrow-up-finance__img">
+            </div>
+          </div>
+          <section class="it">
+            <div class="content-narrow">
+              <div class="it__flex-column">
+                <div class="it__link">https://www.bigdataschool.ru/blog/lean-costs-in-it.html</div>
+                <div class="it__flex">
+                  <div class="it__body">
+                    <div class="it__body-flex">
+                      <h3 class="it__title title">Lean в IT</h3>
+                      <div class="it__text">На пути к Индустрии 4.0 для компании важно чтобы внедрение изменений осуществлялось слаженно и системно, усилия координировались,<br> а результаты были и соответствовали ожиданиям. </div>
+                      <div class="it__list list-it">
+                        <h4 class="list-it__title">Почему Lean-трансформацию компании стоит начать с<br> ИТ-департамента?</h4>
+                        <ul class="list-it__list">
+                          <li class="list-it__item">Цифровая трансформация бизнеса стала необходимым условием не только роста, но и выживания. </li>
+                          <li class="list-it__item">Эффективная ИТ-инфраструктура позволяет аккумулировать данные из всех областей деятельности компании. А значит - принимать решения, основанные на данных. 
+                          </li>
+                          <li class="list-it__item">Бюджеты на ИТ-инфраструктуру растут из года в год, во многих компаниях (не связанных с ИТ-сервисами) превышая бюджеты на развитие инфраструктуры основного производства. 
+                          </li>
+                          <li class="list-it__item">ИТ-проекты становятся серьезным вызовом как для руководства, так и для исполнителей. И часто упираются в высокий уровень сопротивления изменениям</li>
+                          <li class="list-it__item">Качество функционирования ИТ-инфраструктуры теперь влияет на удовлетворенность не только внутренних, но и внешних потребителей. </li>
+                          <li class="list-it__item">Высокий процент изменений в компании требует быстрой адаптации ИТ-инфраструктуры. Гибкость и скорость адаптации часто становятся ключевыми факторами успешности внедряемых изменений. </li>
+                          <li class="list-it__item">Эффективность ИТ-инфраструктуры сложно измерить, а значит - сложно улучшать</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="it__img-wrap">
+                    <img src="assets/img/lean_in_it.png" alt="" class="it__img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          @@include("components/_start.html")
+          <div class="arrow-up-footer">
+            <div class="content-narrow">
+              <div class="arrow-up-footer__img-wrap">
+                <img src="assets/img/arrow_up.png" alt="" class="arrow-up-footer__img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     
-  </main>
-  @@include('layout/_footer.html')
-  <!-- <script src="js/script.min.js"></script> -->
+    @@include("components/_footer.html")
+  </div>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
