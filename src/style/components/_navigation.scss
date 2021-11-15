@@ -48,7 +48,7 @@
   &__body {
 
     @include respond-to('max-medium') {
-      background-color: rgba(255, 255, 255, 1);
+      background-color: $background-main-1;
       transition: left  0.3s ease 0s;
       overflow: auto;
 
@@ -68,7 +68,7 @@
   &__list {
 
     @include respond-to('min-medium') {
-      @include flex (center);
+      @include flex (row, center, center);
     }
 
     @include respond-to('max-medium') {
@@ -85,7 +85,7 @@
     }
 
     @include respond-to('min-medium') {
-      margin: auto 23px;
+      margin: auto  0 auto 46px;
     }
   }
 
@@ -94,13 +94,15 @@
                   $navigation-font-size, 
                   $navigation-line-heigth, 
                   $navigation-color);
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: #7EB7F0;
-    }
-
-    &:active {
-      color: #fe7062;
+      color: $dark-blue;
     }
   }
+}
+
+// Блокировка прокрутки при работе меню-бургера
+.lock {
+  overflow: hidden;
 }

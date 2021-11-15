@@ -11,7 +11,13 @@
   'base/typeography';
 
 @import 
-  'components/navigation';
+  'components/button_yellow',
+  'components/use_item',
+  'components/use-arrow',
+  'components/backgrounds',
+  'components/navigation',
+  'components/title_section',
+  'components/wrappers';
 
 @import
   'layout/footer',
@@ -24,76 +30,4 @@
   'pages/small_business',
   'pages/team';
 
-// Блокировка прокрутки при работе меню-бургера
-.lock {
-  overflow: hidden;
-}
-
-// Обертка
-.wrapper {
-  max-width: 1440px;
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-
-.content {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.white {
-  background-color: #ffffff;
-}
-
-.blue {
-  background: linear-gradient(180deg, #F0F6FF 0%, #F0FFFD 100%);
-}
-
-.content-width {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.content-narrow {
-  max-width: 1080px;
-  padding: 0 20px;
-  margin: 0 auto;
   
-  @media (max-width: 1240px) {
-    max-width: 940px;
-  }
-
-  @media (max-width: 1080px) {
-    max-width: 768px;
-  }
-
-  @media (max-width: 767px) {
-    max-width: 100%;
-  }
-}
-
-.button-yellow {
-  font-family: Open Sans;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  color: #000000;
-  padding: 18px 48px;
-  border-radius: 2px;
-  background-color: #FFE600;
-
-  @media (max-width: 1240px) {
-    font-size: 18px;
-  }
-
-  @media (max-width: 1080px) {
-    font-size: 16px;
-    padding: 12px 34px;
-  }
-}

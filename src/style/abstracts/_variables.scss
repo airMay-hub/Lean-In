@@ -1,10 +1,11 @@
 $breakpoints: (
-  'max-small': (max-width: 479.98px),
-  'max-medium': (max-width: 767.98px),
-  'max-large': (max-width: 991.98px),
-  'min-small': (min-width: 479.98px),
-  'min-medium': (min-width: 767.98px),
-  'min-large': (min-width: 991.98px),
+  'max-small': (max-width: 549px),
+  'max-medium': (max-width: 768px),
+  'max-large': (max-width: 1080px),
+  'max-huge': (max-width: 1240px),
+  'min-small': (min-width: 549px),
+  'min-medium': (min-width: 768px),
+  'min-large': (min-width: 1080px),
 );
 
 // из прошлого проекта
@@ -22,12 +23,14 @@ $pt-sans: 'PT Sans';
 $dark-grey: rgba(51, 51, 51, 1);
 $grey: rgba(79, 79, 79, 1);
 $white: rgba(255, 255, 255, 1);
-$light-blue: linear-gradient(135deg, 
-  rgba(125, 151, 244, 1) 0%, 
-  rgba(125, 187, 244, 1) 10%, 
-  rgba(255, 255, 255, 1) 70%);
+$light-blue: linear-gradient(180deg, 
+          rgba(240, 246, 255, 1) 0%, 
+          rgba(240, 255, 253, 1) 100%);
 $middle-blue: rgba(198, 223, 249, 1);
 $dark-blue: rgba(125, 155, 244, 1);
+$yellow: rgba(255, 230, 0, 1);
+$salmon: rgba(254, 112, 98, 1);
+$indigo: rgba(3, 0, 97, 1);
 
 // Фон
 $background-main-1: $white;
@@ -36,19 +39,49 @@ $background-start: $middle-blue;
 $background-footer: $dark-blue;
 
 
-// текст навигации
+// навигация
 $navigation-font-family: $open-sans;
 $navigation-font-size: 20px;
 $navigation-line-heigth: 30px;
 $navigation-color: $dark-grey;
+$navigation-hover: $salmon;
+$intro-gradient: linear-gradient(135deg, 
+  rgba(125, 151, 244, 1) 0%, 
+  rgba(125, 187, 244, 1) 10%, 
+  rgba(255, 255, 255, 1) 70%);
 
 // заголовки
-$main-heading-color: $dark-grey;
+$intro-font-family: $open-sans;
+$intro-font-size: 48px;
+$intro-line-height: 60 / 48 * 100%;
+$intro-introdution-color: $white;
+$intro-span-color: $dark-grey;
+
+$section-font-family: $pt-sans;
+$section-font-size: 36px;
+$section-line-height: 40px;
+$section-font-color: $dark-grey;
+
+// section use
+$use-item-color: linear-gradient(231.12deg, 
+            rgba(125, 151, 244, 1) 9.52%, 
+            rgba(125, 187, 244, 1) 101.71%);
+
+// кнопка
+$button-font-family: $open-sans;
+$button-background: $yellow;
+$button-hover: rgba(253, 204, 199, 1);
 
 // текст
+$main-font-family: $open-sans;
 $main-paragraph-color: $grey;
+$main-font-size: 20px;
+$main-line-heigth: 30px;
+$font-color-light: $white;
+
 $small-font-size: 16px;
 
 // подвал
-$footer-font-color: $white;
+$footer-font-family: $pt-sans;
 $footer-line-hight: 26px;
+$footer-font-color: $white;

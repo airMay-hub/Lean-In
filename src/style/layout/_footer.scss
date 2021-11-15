@@ -3,7 +3,7 @@
   background-color: $background-footer;
   
   &__content {
-    @include flex (space-between);
+    @include flex (row, space-between, center);
     padding: 20px 37px 30px;
 
     @include respond-to('max-small') {
@@ -22,7 +22,7 @@
   }
 
   &__body {
-    @include flex (center, flex-end, column);
+    @include flex (column, center, flex-end);
 
     @include respond-to('max-small') {
       align-items: flex-start;
@@ -30,9 +30,9 @@
   }
 
   &__text {
-    @include font ($pt-sans, normal, 
-                $small-font-size, 
-                $footer-line-hight, 
-                $footer-font-color);
+    @include font ($footer-font-family, normal, 
+                  $small-font-size, 
+                  $footer-line-hight, 
+                  $footer-font-color);
   }
 }

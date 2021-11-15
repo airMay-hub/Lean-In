@@ -1,0 +1,9 @@
+.use-arrow {
+  width: 100%;
+
+  @include displayNone ('max-small');
+}
+
+.blue-indent {
+  padding: 0 0 70px;
+}
