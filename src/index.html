@@ -49,43 +49,35 @@
           </section>
           <img class="use-arrow" src="assets/img/use_arrow.jpg" alt="img">
         </div>
-        <div class="colored blue-indent">
+        <div class="colored use-indent">
           <section class="sales">
-            <div class="content-narrow">
+            <div class="content-without-breakpoint">
               <div class="sales__flex">
-                <div class="sales__column column">
-                  <div class="column__flex">
-                    <h3 class="column__title title">Lean в продажах</h3>
-                    <p class="column__text">Внедрение бережливого производства приводит к достижению<br> впечатляющих результатов в отношении основых показателей продаж. <strong>Благодаря внедрению системы LEAN вы сможете:</strong></p>
-                    <ul class="column__list">
-                      <li class="column__item">Сократить время закрытия сделки</li>
-                      <li class="column__item">Обслуживать больше клиентов за меньшее время</li>
-                      <li class="column__item">Устранить зависмоть от “звезд”</li>
-                      <li class="column__item">Снизить себестоимости продаж за счет сокращения сроков обработки запроса</li>
-                      <li class="column__item">Избавиться от операционных ошибок</li>
-                      <li class="column__item">Улучшить качественные показатели:<br> повышение конверсии, снижение времени обработки запросов и закрытия сделок, снижение стоимости лида</li>
-                      <li class="column__item">Снизить зависимость от колебаний спроса (выравнять поток) </li>
-                      <li class="column__item">Минимизировать потери: избыточная документация, неэффективная коммуникация, лишние внутренние согласования, необоснованные скидки</li>
-                    </ul>
-                  </div>
-
+                <div class="sales__body">
+                  <h3 class="sales__title title">Lean в продажах</h3>
+                  <p class="sales__text">Внедрение бережливого производства приводит к достижению впечатляющих результатов в отношении основых показателей продаж. <strong>Благодаря внедрению системы LEAN вы сможете:</strong></p>
+                  <ul class="sales__list">
+                    <li class="sales__item">Сократить время закрытия сделки</li>
+                    <li class="sales__item">Обслуживать больше клиентов за меньшее время</li>
+                    <li class="sales__item">Устранить зависмоть от “звезд”</li>
+                    <li class="sales__item">Снизить себестоимости продаж за счет сокращения сроков обработки запроса</li>
+                    <li class="sales__item">Избавиться от операционных ошибок</li>
+                    <li class="sales__item">Улучшить качественные показатели:<br> повышение конверсии, снижение времени обработки запросов и закрытия сделок, снижение стоимости лида</li>
+                    <li class="sales__item">Снизить зависимость от колебаний спроса (выравнять поток) </li>
+                    <li class="sales__item">Минимизировать потери: избыточная документация, неэффективная коммуникация, лишние внутренние согласования, необоснованные скидки</li>
+                  </ul>
                 </div>
-                <div class="sales__column">
-                  <div class="sales__img-wrap">
-                    <img src="assets/img/lean_in_sales.png" alt="" class="sales__img">
-                  </div>
-                </div>
+                <div class="sales__img"></div>
               </div>
-
+            </div>
+            <div class="content-for-start">
+              @@include("components/_start.html")
             </div>
           </section>
-          @@include("components/_start.html")
         </div>
-        <div class="light white-finance">
-          <div class="arrow-down-blue">
-            <div class="arrow-up-small">
-              <img src="assets/img/arrow_up.png" alt="" class="arrow-up-small__img">
-            </div>
+        <div class="light indent-finance">
+          <div class="sales-arrow">
+            <a class="sales-arrow__button button-up" href=""></a>
           </div>
           <section class="finance">
             <div class="content-narrow">
@@ -170,8 +162,9 @@
         </div>
       </main>
     </div>
-    
-    @@include("components/_footer.html")
+    <div class="content-for-start">
+      @@include("components/_start.html")
+    </div>
   </div>
   <script src="js/script.min.js"></script>
 </body>

@@ -4,6 +4,16 @@
   @include displayNone ('max-small');
 }
 
-.blue-indent {
-  padding: 0 0 70px;
+// отступ между секциями use и sales, 
+// чтобы поместилось изображение use-arrow
+.use-indent {
+  padding: 0 0 70px 0;
+
+  @include respond-to('max-medium') {
+    padding: 0 0 35px 0;
+  }
+
+  @include respond-to('max-small') {
+    padding: 0;
+  }
 }

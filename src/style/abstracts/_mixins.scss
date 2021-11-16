@@ -35,6 +35,13 @@
   flex-wrap: $wrap;
 }
 
+@mixin backgroundImage ($url, $position: 0 0, $size: auto auto, $repeat: no-repeat) {
+    background-image: $url;
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
 @mixin displayNone ($breakpoint, $display: none) {
   @include respond-to($breakpoint) {
     display: $display;

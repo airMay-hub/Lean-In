@@ -1,0 +1,26 @@
+// assets/img/arrow_up.png
+
+.sales-arrow {
+  margin-top: -1px;
+  width: 0;
+  border-top: 125px solid #f0fffd;
+  border-left: $ab solid transparent;
+  border-right: $ab solid transparent;
+
+  @include displayNone ('max-small');
+}
+
+.arrow-up-small {
+
+  position: absolute;
+  top: -130px;
+  left: -47px;
+
+  &__img {
+    width: 95px;
+  }
+}
+
+.indent-finance {
+  margin: 0 0 70px 0;
+}

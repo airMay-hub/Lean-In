@@ -1,4 +1,5 @@
 $breakpoints: (
+  'max-tiny': (max-width: 425px),
   'max-small': (max-width: 549px),
   'max-medium': (max-width: 768px),
   'max-large': (max-width: 1080px),
@@ -62,6 +63,8 @@ $section-font-size: 36px;
 $section-line-height: 40px;
 $section-font-color: $dark-grey;
 
+$start-font-size: 24px;
+
 // section use
 $use-item-color: linear-gradient(231.12deg, 
             rgba(125, 151, 244, 1) 9.52%, 
@@ -80,6 +83,7 @@ $main-line-heigth: 30px;
 $font-color-light: $white;
 
 $small-font-size: 16px;
+$small-line-height: 20px;
 
 // подвал
 $footer-font-family: $pt-sans;

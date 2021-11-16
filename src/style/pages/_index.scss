@@ -88,19 +88,19 @@
     width: 13.3%;
 
     @include position (absolute, auto, auto, -10.6%, 25.4%);
-    @include displayNone ('max-small');
+    @include displayNone ('max-tiny');
   }
 
   &__img-2 {
     @include position (absolute, auto, auto, 17.3%, -12.64%);
     width: 44.7%;
-    @include displayNone ('max-small');
+    @include displayNone ('max-tiny');
   }
 
   &__img-3 {
     @include position (absolute, auto, auto, -6.73%, -3.26%);
     width: 30.3%;
-    @include displayNone ('max-small');
+    @include displayNone ('max-tiny');
   }
 
   &__img-4 {
@@ -118,7 +118,7 @@
   }
 
   @include respond-to('max-medium') {
-    padding: 100px 0 100px;
+    padding: 90px 0 90px;
   }
 
   @include displayNone ('max-small');
@@ -144,91 +144,81 @@
   }
 }
 
-.arrow-down-blue {
-  margin-top: -1px;
-  width: 0;
-  border-top: 125px solid #f0fffd;
-  border-left: $ab solid transparent;
-  border-right: $ab solid transparent;
-  // box-shadow: 0px 10px 50px rgba(183, 221, 216, 0.25);
-}
-
 .sales {
+  padding: 85px 0 0;
 
-  padding: 85px 0 55px;
+  @include respond-to('max-small') {
+    padding: 45px 0 0 0;
+  }
 
   &__flex {
-    display: flex;
+    @include flex();
+    margin: 0 0 55px 0;
+
+    @include respond-to('max-medium') {
+      padding: 0;
+      flex-direction: column;
+    }
   }
 
-  &__column {
-  }
-
-  &__img-wrap {
-    width: 320px;
-  }
-
-  &__img {
-    width: 320px;
-    margin: 5px 0 0 0;
-  }
-}
-
-.column {
-
-  padding: 0 50px 0 0;
-
-  &__flex {
-    display: flex;
-    flex-direction: column;
+  &__body {
   }
 
   &__title {
     margin: 0 0 40px;
+
+    @include respond-to('max-medium') {
+      margin: 0 0 15px 0;
+    }
   }
 
   &__text {
-    font-family: PT Sans;
-    font-size: 20px;
-    line-height: 30px;
-    color: #4f4f4f;
-    margin: 0 0 33px;
+    @include font ($pt-sans, normal, 
+                  $main-font-size, 
+                  $main-line-heigth, 
+                  $dark-grey);
+    margin: 0 0 30px 0;
+
+    @include respond-to('max-small') {
+      font-size: 18px;
+    }
   }
 
   &__list {
+
+    @include respond-to('max-medium') {
+      margin: 0 0 50px 0;
+    }
   }
 
   &__item {
-    font-family: PT Sans;
-    font-size: 16px;
-    line-height: 20px;
-    color: #4F4F4F;
-    margin: 0 0 16px;
-    padding: 0 0 0 30px;
-    background-image: url(../img/list_item.svg);
-    background-position: 0 4px;
-    background-repeat: no-repeat;
+    @include font ($pt-sans, normal, 
+                  $small-font-size, 
+                  $small-line-height, 
+                  $dark-grey);
+    @include size (auto, auto, 0 0 16px, 0 0 0 30px);
+    @include backgroundImage (url(../assets/img/list_item.svg), 0 4px)
+  }
+
+  &__img {
+    @include size (320px, 307px, 0 0 0 50px);
+    flex: 0 0 320px;
+    background-image: url(../assets/img/lean_in_sales1.png);
+
+    @include respond-to('max-medium') {
+      margin: 0;
+      align-self: center;
+    }
+
+    @include respond-to('max-small') {
+      background-image: url(../assets/img/lean_in_sales2.png);
+    }
   }
 }
 
-.white-finance {
-  margin: 0 0 70px 0;
-}
-.arrow-down-blue {
-  position: relative;
-}
-.arrow-up-small {
+// ! to be continued
 
-  position: absolute;
-  top: -130px;
-  left: -47px;
-
-		&__img {
-      width: 95px;
-		}
-}
 .finance {
-
   padding: 90px 0 40px 0;
 
     &__flex {
