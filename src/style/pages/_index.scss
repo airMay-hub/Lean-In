@@ -221,18 +221,23 @@
 .finance {
   padding: 90px 0 40px 0;
 
+  @include respond-to('max-medium') {
+    padding: 45px 0 20px 0;
+  }
+
     &__flex {
       display: flex;
+
+      @include respond-to('max-medium') {
+        flex-direction: column;
+      }
+
     }
 
 		&__body {
       padding: 0 50px 0 0;
+      @include flex (column);
 		}
-    
-    &__body-flex {
-      display: flex;
-      flex-direction: column;
-    }
 
 		&__title {
       margin: 0 0 30px 0;

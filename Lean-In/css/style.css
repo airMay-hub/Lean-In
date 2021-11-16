@@ -1224,16 +1224,21 @@ h6 {
 
 .finance__body {
   padding: 0 50px 0 0;
-}
-
-.finance__body-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .finance__title {
@@ -1963,6 +1968,17 @@ h6 {
     margin: 0;
     -ms-flex-item-align: center;
         align-self: center;
+  }
+
+  .finance {
+    padding: 45px 0 20px 0;
+  }
+
+  .finance__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
