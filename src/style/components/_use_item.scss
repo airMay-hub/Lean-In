@@ -1,7 +1,7 @@
-.item {
+.use-item {
   @include size (320px, 200px, 0, 22px);
   @include flex (column, space-between, flex-end);
-  background: $use-item-color;
+  background: $use-item-gradient;
   box-shadow: 0px 4px 25px rgba(35, 36, 70, 0.25);
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
@@ -42,21 +42,12 @@
 
   &__text {
     align-self: flex-start;
-    @include font ($main-font-family, bold, 
-                  $main-font-size, 
-                  $main-line-heigth, 
-                  $font-color-light);
+    color: $white;
 
-    @include respond-to('max-huge') {
-      font-size: 18px;
-    }
-
-    @include respond-to('max-large') {
-      font-size: 16px;
-    }
+    @include fontAdaptive ();
 
     @include respond-to('max-medium') {
-      line-height: 20px;
+      line-height: $main-f3;
     }
   }
 }

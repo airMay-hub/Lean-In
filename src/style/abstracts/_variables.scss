@@ -9,83 +9,135 @@ $breakpoints: (
   'min-large': (min-width: 1080px),
 );
 
-// из прошлого проекта
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
-$maxWidth: 1080;
+// ???
 $ab: 720 / 1440 * 100vw;
 
-// шрифт
+// Шрифт
 $open-sans: 'Open Sans';
 $pt-sans: 'PT Sans';
 
-// цвета
-$dark-grey: rgba(51, 51, 51, 1);
-$grey: rgba(79, 79, 79, 1);
-$white: rgba(255, 255, 255, 1);
-$light-blue: linear-gradient(180deg, 
-          rgba(240, 246, 255, 1) 0%, 
-          rgba(240, 255, 253, 1) 100%);
-$middle-blue: rgba(198, 223, 249, 1);
-$dark-blue: rgba(125, 155, 244, 1);
-$yellow: rgba(255, 230, 0, 1);
-$salmon: rgba(254, 112, 98, 1);
-$indigo: rgba(3, 0, 97, 1);
+// Толщина
+$regular: regular;
+$bold: bold;
 
-// Фон
-$background-main-1: $white;
-$background-main-2: $light-blue;
-$background-start: $middle-blue;
-$background-footer: $dark-blue;
+// Размер шрифта
+$fs14: 14px;
+$fs16: 16px;
+$fs18: 18px;
+$fs20: 20px;
+$fs24: 24px;
+$fs36: 36px;
+$fs48: 48px;
 
+// Высота строки
+$lh16: 16px;
+$lh20: 20px;
+$lh30: 30px;
+$lh40: 40px;
+$lh60: 60px;
 
-// навигация
-$navigation-font-family: $open-sans;
-$navigation-font-size: 20px;
-$navigation-line-heigth: 30px;
-$navigation-color: $dark-grey;
+// Цвет текста
+$dark-grey: rgba(51, 51, 51, 1); // #333333
+$white: rgba(255, 255, 255, 1); // #ffffff
+$black-blue: rgba(18, 18, 34, 1); //# 121222
+$middle-grey: rgba(79, 79, 79, 1); // #4f4f4f
+$black: rgba(0, 0, 0, 1); //000000
+$white-grey: rgba(242, 242, 242, 1); //f2f2f2
+$salmon: rgba(254, 112, 98, 1); // navigation link hover
+
+// index links (navigation, use, button)
+$link-font-family: $open-sans;
+$link-weight: $bold;
+$link-size: $fs20;
+$link-height: $lh30;
+$link-color: $dark-grey;
 $navigation-hover: $salmon;
-$intro-gradient: linear-gradient(135deg, 
-  rgba(125, 151, 244, 1) 0%, 
-  rgba(125, 187, 244, 1) 10%, 
-  rgba(255, 255, 255, 1) 70%);
 
-// заголовки
+// Headering intro
 $intro-font-family: $open-sans;
-$intro-font-size: 48px;
-$intro-line-height: 60 / 48 * 100%;
-$intro-introdution-color: $white;
+$intro-size: $fs48;
+$intro-height: $lh60 / $fs48 * 100%;
+$intro-color: $white;
 $intro-span-color: $dark-grey;
 
-$section-font-family: $pt-sans;
-$section-font-size: 36px;
-$section-line-height: 40px;
-$section-font-color: $dark-grey;
+// Main text
+$main-font-family: $pt-sans;
+$main-weight: $regular;
+$main-size: $fs20;
+$main-height: $lh30;
+$main-color: $middle-grey;
 
-$start-font-size: 24px;
+// Main adaptive text
+$main-f1: $fs18;
+$main-f2: $fs18;
+$main-f3: $fs16;
+$main-f4: $fs14;
 
-// section use
-$use-item-color: linear-gradient(231.12deg, 
-            rgba(125, 151, 244, 1) 9.52%, 
-            rgba(125, 187, 244, 1) 101.71%);
+// Section headering
+$sh-font-family: $pt-sans;
+$sh-weight: $bold;
+$sh-size: $fs36;
+$sh-height: $lh40;
+$sh-color: $dark-grey;
 
-// кнопка
-$button-font-family: $open-sans;
-$button-background: $yellow;
-$button-hover: rgba(253, 204, 199, 1);
+// List's items
+$li-font-family: $pt-sans;
+$li-weight: $regular;
+$li-size: $fs16;
+$li-height: $lh20;
+$li-color: $middle-grey;
 
-// текст
-$main-font-family: $open-sans;
-$main-paragraph-color: $grey;
-$main-font-size: 20px;
-$main-line-heigth: 30px;
-$font-color-light: $white;
+// List headering
+$ul-font-family: $pt-sans;
+$ul-weight: $bold;
+$ul-size: $fs24;
+$ul-height: $lh30;
+$ul-color: $dark-grey;
 
-$small-font-size: 16px;
-$small-line-height: 20px;
+// Start item's headering
+$sih-font-family: $pt-sans;
+$sih-weight: $bold;
+$sih-size: $fs16;
+$sih-height: $lh16;
+$sih-color: $dark-grey;
 
-// подвал
+// IT link
+$it-link-font-family: $open-sans;
+$it-link-weight: $regular;
+$it-link-size: $fs18;
+$it-link-height: $lh30;
+$it-link-color: $black;
+
+// footer
 $footer-font-family: $pt-sans;
-$footer-line-hight: 26px;
-$footer-font-color: $white;
+$footer-weight: $regular;
+$footer-size: $fs16;
+$footer-hight: $lh20;
+$footer-color: $white-grey;
+
+// Цвет фона
+// $white; // header, intro, use
+$middle-blue-gradient: linear-gradient(135deg, 
+                  rgba(125, 151, 244, 1) 0%, 
+                  rgba(125, 187, 244, 1) 10%, 
+                  rgba(255, 255, 255, 1) 70%);
+$light-blue-gradient: linear-gradient(180deg, 
+          rgba(240, 246, 255, 1) 0%, 
+          rgba(240, 255, 253, 1) 100%); // #f0f2ff, #f0fffd
+$dark-blue-gradient: linear-gradient(231.12deg, 
+                  rgba(125, 151, 244, 1) 9.52%, 
+                  rgba(125, 187, 244, 1) 101.71%);
+$middle-blue: rgba(198, 223, 249, 1);
+$light-blue: rgba(240, 246, 255, 1);
+$dark-blue: rgba(125, 155, 244, 1);
+$yellow: rgba(255, 230, 0, 1);
+
+// Фон
+$intro-gradient: $middle-blue-gradient; // intro background (max-width: medium)
+$button-background: $yellow; // button
+$background-main-1: $white; // header, intro, use
+$background-main-2: $light-blue-gradient; // sales, it
+$use-item-gradient: $dark-blue-gradient; // use items
+$background-start: $middle-blue; // start
+$background-discuss: $light-blue; // discuss
+$background-footer: $dark-blue; // footer

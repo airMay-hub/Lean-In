@@ -1,9 +1,9 @@
 .button-yellow {
   padding: 18px 48px;
-  @include font ($button-font-family, 
-                bold, $main-font-size, 
-                $main-line-heigth, 
-                $dark-grey);
+
+  @include font ($link-font-family, $link-weight, $link-size, $link-height);
+  
+  color: $link-color;
   background-color: $button-background;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
@@ -12,17 +12,13 @@
     box-shadow: 0px 4px 25px rgba(35, 36, 70, 0.5);
   }
 
-  @include respond-to('max-huge') {
-    font-size: 18px;
-  }
+  @include fontAdaptive ();
 
   @include respond-to('max-large') {
     padding: 12px 34px;
-    font-size: 16px;
   }
 
   @include respond-to('max-small') {
     padding: 7px 26px;
-    font-size: 14px;
   }
 }

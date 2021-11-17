@@ -1,18 +1,14 @@
 .title {
-  @include font ($section-font-family, bold,
-                $section-font-size,
-                $section-line-height,
-                $section-font-color);
 
-  @include respond-to('max-large') {
-    font-size: 32px;
-  }
+  // @include respond-to('max-large') {
+  //   font-size: 32px;
+  // }
 
-  @include respond-to('max-medium') {
-    font-size: 28px;
-  }
+  // @include respond-to('max-medium') {
+  //   font-size: 28px;
+  // }
 
-  @include respond-to('max-small') {
-    font-size: 24px;
-  }
+  // @include respond-to('max-small') {
+  //   font-size: 24px;
+  // }
 }

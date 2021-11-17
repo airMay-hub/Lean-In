@@ -1,14 +1,12 @@
 .footer {
   flex: 0 0 auto;
-  background-color: $background-footer;
   
   &__content {
     @include flex (row, space-between, center);
     padding: 20px 37px 30px;
 
     @include respond-to('max-small') {
-      flex-direction: column;
-      align-items: flex-start;
+      @include flex (column, space-between, flex-start);
       padding: 20px 37px;
     }
   }
@@ -30,9 +28,5 @@
   }
 
   &__text {
-    @include font ($footer-font-family, normal, 
-                  $small-font-size, 
-                  $footer-line-hight, 
-                  $footer-font-color);
   }
 }

@@ -1,8 +1,8 @@
-.sales-arrow {
+.finance-arrow {
   position: relative;
   margin-top: -1px;
   width: 0;
-  border-top: 125px solid #f0fffd;
+  border-top: 125px solid $white;
   border-left: $ab solid transparent;
   border-right: $ab solid transparent;
 
@@ -15,12 +15,5 @@
       @include position (absolute, 0, 0);
     }
   }
-}
 
-.indent-finance {
-  margin: 0 0 70px 0;
-
-  @include respond-to('max-medium') {
-    margin: 0;
-  }
 }

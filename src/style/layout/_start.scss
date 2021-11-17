@@ -1,12 +1,10 @@
 .start {
   padding: 40px;
   @include flex (column);
-  background-color: $middle-blue;
   border-radius: 4px;
 
   &__title {
     margin: 0 0 42px 0;
-    @include font ($pt-sans, bold, $start-font-size, $main-line-heigth, $dark-grey);
   }
 
   &__body {

@@ -48,7 +48,6 @@
   &__body {
 
     @include respond-to('max-medium') {
-      background-color: $background-main-1;
       transition: left  0.3s ease 0s;
       overflow: auto;
 
@@ -90,10 +89,7 @@
   }
 
   &__link {
-    @include font ($navigation-font-family, bold, 
-                  $navigation-font-size, 
-                  $navigation-line-heigth, 
-                  $navigation-color);
+    color: $link-color;
     transition: all 0.3s ease-in-out;
 
     &:hover {
