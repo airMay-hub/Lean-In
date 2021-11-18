@@ -261,6 +261,13 @@ h6 {
   line-height: 30px;
 }
 
+.logo {
+  margin: auto 0;
+  padding: 0;
+  width: 99px;
+  height: 22px;
+}
+
 .navigation__burger {
   display: none;
 }
@@ -485,14 +492,10 @@ h6 {
       flex-wrap: nowrap;
 }
 
-.logo {
-  margin: auto 0;
-  padding: 0;
-  width: 100px;
-  height: 22px;
+.header__logo {
   background-image: url(../assets/img/logo.png);
   background-position: 0 0;
-  background-size: 100% 100%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -1610,7 +1613,7 @@ h6 {
 @media (max-width: 1240px) {
   .button-yellow {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 30px;
   }
 
   .use-item {
@@ -1635,7 +1638,7 @@ h6 {
   }
 
   .main-text {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
   }
 
@@ -1644,8 +1647,8 @@ h6 {
   }
 
   .introduction__title {
-    font-size: 41px;
-    line-height: 33px;
+    font-size: 24px;
+    line-height: 41px;
   }
 
   .introduction__text {
@@ -1661,7 +1664,7 @@ h6 {
 @media (max-width: 1080px) {
   .button-yellow {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 30px;
   }
 
   .button-yellow {
@@ -1690,8 +1693,8 @@ h6 {
   }
 
   .main-text {
-    font-size: 16px;
-    line-height: 14px;
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .content-narrow {
@@ -1699,8 +1702,8 @@ h6 {
   }
 
   .introduction__title {
-    font-size: 28px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 33px;
   }
 
   .introduction__text {
@@ -1737,7 +1740,7 @@ h6 {
 @media (max-width: 768px) {
   .button-yellow {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 30px;
   }
 
   .use-item {
@@ -1938,7 +1941,7 @@ h6 {
 
   .introduction__title {
     font-size: 16px;
-    line-height: 16px;
+    line-height: 28px;
   }
 
   .introduction__title {
@@ -2000,7 +2003,7 @@ h6 {
 @media (max-width: 549px) {
   .button-yellow {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 30px;
   }
 
   .button-yellow {
@@ -2078,7 +2081,7 @@ h6 {
 
   .introduction__title {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 28px;
   }
 
   .introduction__title {
@@ -2126,7 +2129,7 @@ h6 {
 .start-columns__img-1{background-image:url("../assets/img/training.webp")}
 .start-columns__img-2{background-image:url("../assets/img/transformation.webp")}
 .start-columns__img-3{background-image:url("../assets/img/project.webp")}
-.logo{background-image:url(../assets/img/logo.webp)}
+.header__logo{background-image:url(../assets/img/logo.webp)}
 .ph-list__item{background-image:url(../img/dot.webp)}
 .FAQ__item{background-image:url(../img/minus.svg)}
 .sales__item{background-image:url(../assets/img/list_item.svg)}

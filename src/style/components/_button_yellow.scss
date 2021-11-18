@@ -11,8 +11,8 @@
   &:hover {
     box-shadow: 0px 4px 25px rgba(35, 36, 70, 0.5);
   }
-
-  @include fontAdaptive ();
+  
+  @include fontAdaptive (30px, 30px, 30px);
 
   @include respond-to('max-large') {
     padding: 12px 34px;
