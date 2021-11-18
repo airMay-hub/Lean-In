@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  background-color: $background-main-1;
 
   @include respond-to('max-medium') {
     @include position (fixed);
@@ -12,6 +13,10 @@
   }
 
   &__logo {
-    margin: auto 0;
   }
+}
+
+.logo {
+  @include size (100px, 22px, auto 0);
+  @include backgroundImage (url(../assets/img/logo.png), 0 0, 100% 100%);
 }

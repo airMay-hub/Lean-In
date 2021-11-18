@@ -1,4 +1,5 @@
 // index links (navigation, use, button)
 .links-font {
   @include font ($link-font-family, $link-weight, $link-size, $link-height);
+  @include fontAdaptive ();
 }

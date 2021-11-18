@@ -266,6 +266,10 @@ h6 {
 }
 
 .navigation__link {
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
   color: #333333;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -456,6 +460,7 @@ h6 {
 
 .header {
   width: 100%;
+  background-color: white;
 }
 
 .header__content {
@@ -480,8 +485,15 @@ h6 {
       flex-wrap: nowrap;
 }
 
-.header__logo {
+.logo {
   margin: auto 0;
+  padding: 0;
+  width: 100px;
+  height: 22px;
+  background-image: url(../assets/img/logo.png);
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .start {
@@ -1617,6 +1629,11 @@ h6 {
     line-height: 20px;
   }
 
+  .links-font {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
   .main-text {
     font-size: 18px;
     line-height: 18px;
@@ -1663,6 +1680,11 @@ h6 {
   }
 
   .use-item__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .links-font {
     font-size: 18px;
     line-height: 18px;
   }
@@ -1764,6 +1786,11 @@ h6 {
     left: 0;
     bottom: auto;
     right: auto;
+  }
+
+  .links-font {
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .main-text {
@@ -2001,6 +2028,11 @@ h6 {
     display: none;
   }
 
+  .links-font {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   .main-text {
     font-size: 14px;
     line-height: 16px;
@@ -2094,6 +2126,7 @@ h6 {
 .start-columns__img-1{background-image:url("../assets/img/training.webp")}
 .start-columns__img-2{background-image:url("../assets/img/transformation.webp")}
 .start-columns__img-3{background-image:url("../assets/img/project.webp")}
+.logo{background-image:url(../assets/img/logo.webp)}
 .ph-list__item{background-image:url(../img/dot.webp)}
 .FAQ__item{background-image:url(../img/minus.svg)}
 .sales__item{background-image:url(../assets/img/list_item.svg)}
