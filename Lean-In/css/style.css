@@ -267,9 +267,9 @@ h6 {
   position: relative;
   margin-top: -1px;
   width: 0;
-  border-top: 125px solid white;
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
+  border-top: 125px solid #f0fffd;
+  border-left: 720px solid transparent;
+  border-right: 720px solid transparent;
 }
 
 .finance-arrow__button {
@@ -1228,7 +1228,6 @@ h6 {
 
 .finance {
   position: relative;
-  padding: 90px 0 0 0;
 }
 
 .finance__flex {
@@ -1647,6 +1646,11 @@ h6 {
   }
 
   .it-arrow {
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+  }
+
+  .finance-arrow {
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
   }
