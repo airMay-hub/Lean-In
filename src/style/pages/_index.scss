@@ -174,13 +174,9 @@
     }
   }
 
-// !=========================
   &__item {
-    @include size (auto, auto, 0 0 16px, 0 0 0 30px);
-    @include backgroundImage (url(../assets/img/list_item.svg), 0 4px)
   }
 
-// !=========================
   &__img {
     @include size (320px, 307px, 0 0 0 50px);
     flex: 0 0 320px;
@@ -249,16 +245,6 @@
   }
 }
 
-.finance-list {
-
-// !=========================
-  &__item {
-    @include size (auto, auto,  0 0 16px 0, 0 0 0 30px);
-    @include backgroundImage (url(../assets/img/list_item.svg), 0 4px);
-  }
-}
-
-// !=========================
 .discuss {
   padding: 0 20px;
 

@@ -239,6 +239,22 @@ h6 {
   right: auto;
 }
 
+.list-items > li {
+  margin: 0 0 16px 0;
+  padding: 0 0 0 30px;
+  width: auto;
+  height: auto;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background-image: url(../assets/img/list_item.svg);
+  background-position: 0 4px;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+}
+
 .finance-arrow {
   position: relative;
   margin-top: -1px;
@@ -1182,17 +1198,6 @@ h6 {
   margin: 0 0 30px 0;
 }
 
-.sales__item {
-  margin: 0 0 16px;
-  padding: 0 0 0 30px;
-  width: auto;
-  height: auto;
-  background-image: url(../assets/img/list_item.svg);
-  background-position: 0 4px;
-  background-size: auto auto;
-  background-repeat: no-repeat;
-}
-
 .sales__img {
   margin: 0 0 0 50px;
   padding: 0;
@@ -1279,17 +1284,6 @@ h6 {
   left: calc(100vw - 50%);
   bottom: 0;
   right: auto;
-}
-
-.finance-list__item {
-  margin: 0 0 16px 0;
-  padding: 0 0 0 30px;
-  width: auto;
-  height: auto;
-  background-image: url(../assets/img/list_item.svg);
-  background-position: 0 4px;
-  background-size: auto auto;
-  background-repeat: no-repeat;
 }
 
 .discuss {
@@ -2139,16 +2133,15 @@ h6 {
 @supports (-webkit-appearance:none){
 .button-up__part-1{background-image:url(../assets/img/svg/button_part_up.svg)}
 .button-up__part-2{background-image:url(../assets/img/svg/button_part_down.svg)}
+.list-items > li{background-image:url(../assets/img/list_item.svg)}
 .start-columns__img-1{background-image:url("../assets/img/training.webp")}
 .start-columns__img-2{background-image:url("../assets/img/transformation.webp")}
 .start-columns__img-3{background-image:url("../assets/img/project.webp")}
 .header__logo{background-image:url(../assets/img/logo.webp)}
 .ph-list__item{background-image:url(../img/dot.webp)}
 .FAQ__item{background-image:url(../img/minus.svg)}
-.sales__item{background-image:url(../assets/img/list_item.svg)}
 .sales__img{background-image:url(../assets/img/lean_in_sales1.webp)}
 .finance__img{background-image:url(../assets/img/Lean_in_finance.webp)}
-.finance-list__item{background-image:url(../assets/img/list_item.svg)}
 .list-it__item{background-image:url(../img/list_item.svg)}
 .criteria__item{background-image:url(../img/list_item.svg)}
 .works__item{background-image:url(../img/list_item.svg)}
