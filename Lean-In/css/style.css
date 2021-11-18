@@ -156,6 +156,10 @@ h6 {
 .use-item__text {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
   color: white;
 }
 
@@ -245,13 +249,6 @@ h6 {
   left: 0;
   bottom: auto;
   right: auto;
-}
-
-.links-font {
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .main-text {
@@ -349,6 +346,14 @@ h6 {
 
 .start-columns__title {
   margin: 27px 0;
+}
+
+.section-title {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  color: #333333;
 }
 
 .wrapper {
@@ -1052,6 +1057,10 @@ h6 {
 .introduction__text {
   max-width: 490px;
   margin-bottom: 35px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 30px;
   color: #121222;
   z-index: 5;
 }
@@ -1632,14 +1641,14 @@ h6 {
     line-height: 20px;
   }
 
-  .links-font {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
   .main-text {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .content-narrow {
@@ -1653,6 +1662,7 @@ h6 {
 
   .introduction__text {
     max-width: 450px;
+    font-size: 18px;
   }
 
   .use__item {
@@ -1687,14 +1697,14 @@ h6 {
     line-height: 18px;
   }
 
-  .links-font {
+  .main-text {
     font-size: 18px;
     line-height: 18px;
   }
 
-  .main-text {
-    font-size: 18px;
-    line-height: 18px;
+  .section-title {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .content-narrow {
@@ -1756,10 +1766,6 @@ h6 {
     line-height: 16px;
   }
 
-  .use-item__text {
-    line-height: 16px;
-  }
-
   .use-indent {
     padding: 0 0 35px 0;
   }
@@ -1789,11 +1795,6 @@ h6 {
     left: 0;
     bottom: auto;
     right: auto;
-  }
-
-  .links-font {
-    font-size: 16px;
-    line-height: 16px;
   }
 
   .main-text {
@@ -1911,6 +1912,11 @@ h6 {
     width: 100%;
     height: auto;
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  }
+
+  .section-title {
+    font-size: 28px;
+    line-height: 40px;
   }
 
   .content-narrow {
@@ -2031,11 +2037,6 @@ h6 {
     display: none;
   }
 
-  .links-font {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
   .main-text {
     font-size: 14px;
     line-height: 16px;
@@ -2043,6 +2044,11 @@ h6 {
 
   .navigation__body {
     width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 40px;
   }
 
   .content-for-start {
@@ -2086,6 +2092,11 @@ h6 {
 
   .introduction__title {
     max-width: 460px;
+  }
+
+  .introduction__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .use {

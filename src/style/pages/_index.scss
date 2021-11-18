@@ -46,12 +46,14 @@
   &__text {
     max-width: 490px; 
     margin-bottom: 35px;
+    @include font ($main-font-family, $main-weight, $main-size, $main-height);
     
     color: $black-blue;
     z-index: 5;
 
     @include respond-to('max-huge') {
       max-width: 450px;
+      font-size: 18px;
     }
 
     @include respond-to('max-large') {
@@ -60,6 +62,11 @@
 
     @include respond-to('max-medium') {
       max-width: 350px;
+    }
+
+    @include respond-to('max-small') {
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 

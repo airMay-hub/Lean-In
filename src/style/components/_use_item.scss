@@ -42,12 +42,9 @@
 
   &__text {
     align-self: flex-start;
+    @include font ($link-font-family, $link-weight, $link-size, $link-height);
     color: $white;
 
     @include fontAdaptive ();
-
-    @include respond-to('max-medium') {
-      line-height: $main-f3;
-    }
   }
 }
