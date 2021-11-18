@@ -255,6 +255,14 @@ h6 {
   background-repeat: no-repeat;
 }
 
+.list-title {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+}
+
 .finance-arrow {
   position: relative;
   margin-top: -1px;
@@ -367,6 +375,14 @@ h6 {
 
 .start-columns__title {
   margin: 27px 0;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -542,6 +558,7 @@ h6 {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  background: #c6dff9;
   border-radius: 4px;
 }
 
@@ -1658,8 +1675,8 @@ h6 {
   }
 
   .main-text {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .section-title {
@@ -1710,7 +1727,7 @@ h6 {
 
   .main-text {
     font-size: 18px;
-    line-height: 18px;
+    line-height: 30px;
   }
 
   .section-title {
@@ -1800,8 +1817,8 @@ h6 {
   }
 
   .main-text {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .navigation__burger {
@@ -1914,6 +1931,10 @@ h6 {
     width: 100%;
     height: auto;
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  }
+
+  .start-columns__title {
+    font-size: 14px;
   }
 
   .section-title {
@@ -2039,12 +2060,16 @@ h6 {
   }
 
   .main-text {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .navigation__body {
     width: 100%;
+  }
+
+  .start-columns__title {
+    white-space: normal;
   }
 
   .section-title {

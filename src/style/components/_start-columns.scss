@@ -46,24 +46,21 @@
 
   &__title {
     margin: 27px 0;
-    // white-space: nowrap;
-    // letter-spacing: 1px;
-    // text-transform: uppercase;
+    @include font ($sih-font-family, $sih-weight, $sih-size, $sih-height);
+    color: $sih-color;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
-    // @include respond-to('max-medium') {
-    //   font-size: 14px;
-    // }
+    @include respond-to('max-medium') {
+      font-size: 14px;
+    }
 
-    // @include respond-to('max-small') {
-    //   white-space: normal;
-    // }
+    @include respond-to('max-small') {
+      white-space: normal;
+    }
   }
 
   &__text {
-
-    // @include respond-to('max-medium') {
-    //   font-size: $small-font-size;
-    //   line-height: 24px;
-    // }
   }
 }

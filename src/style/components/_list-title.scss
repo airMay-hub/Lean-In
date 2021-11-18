@@ -1,0 +1,4 @@
+.list-title {
+  @include font ($ul-font-family, $ul-weight, $ul-size, $ul-height);
+  color: $ul-color;
+}
