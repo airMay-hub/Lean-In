@@ -254,6 +254,13 @@ h6 {
   line-height: 30px;
 }
 
+.main-text {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: regular;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 .navigation__burger {
   display: none;
 }
@@ -1014,6 +1021,11 @@ h6 {
 
 .introduction__title {
   margin-bottom: 26px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 125%;
+  color: white;
   z-index: 5;
 }
 
@@ -1025,6 +1037,7 @@ h6 {
 .introduction__text {
   max-width: 490px;
   margin-bottom: 35px;
+  color: #121222;
   z-index: 5;
 }
 
@@ -1585,6 +1598,7 @@ h6 {
 @media (max-width: 1240px) {
   .button-yellow {
     font-size: 18px;
+    line-height: 20px;
   }
 
   .use-item {
@@ -1600,6 +1614,12 @@ h6 {
 
   .use-item__text {
     font-size: 18px;
+    line-height: 20px;
+  }
+
+  .main-text {
+    font-size: 18px;
+    line-height: 18px;
   }
 
   .content-narrow {
@@ -1608,21 +1628,23 @@ h6 {
 
   .introduction__title {
     font-size: 41px;
+    line-height: 33px;
   }
 
   .introduction__text {
     max-width: 450px;
-    font-size: 18px;
   }
 
   .use__item {
     font-size: 18px;
+    line-height: 20px;
   }
 }
 
 @media (max-width: 1080px) {
   .button-yellow {
     font-size: 18px;
+    line-height: 18px;
   }
 
   .button-yellow {
@@ -1642,6 +1664,12 @@ h6 {
 
   .use-item__text {
     font-size: 18px;
+    line-height: 18px;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 14px;
   }
 
   .content-narrow {
@@ -1649,12 +1677,12 @@ h6 {
   }
 
   .introduction__title {
-    font-size: 33px;
+    font-size: 28px;
+    line-height: 24px;
   }
 
   .introduction__text {
     max-width: 378px;
-    font-size: 16px;
   }
 
   .use {
@@ -1663,6 +1691,7 @@ h6 {
 
   .use__item {
     font-size: 18px;
+    line-height: 18px;
   }
 }
 
@@ -1686,6 +1715,7 @@ h6 {
 @media (max-width: 768px) {
   .button-yellow {
     font-size: 16px;
+    line-height: 16px;
   }
 
   .use-item {
@@ -1698,6 +1728,7 @@ h6 {
 
   .use-item__text {
     font-size: 16px;
+    line-height: 16px;
   }
 
   .use-item__text {
@@ -1733,6 +1764,11 @@ h6 {
     left: 0;
     bottom: auto;
     right: auto;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 16px;
   }
 
   .navigation__burger {
@@ -1874,14 +1910,17 @@ h6 {
   }
 
   .introduction__title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .introduction__title {
     max-width: 600px;
-    font-size: 28px;
     color: #333333;
   }
 
   .introduction__text {
     max-width: 350px;
-    font-size: 14px;
   }
 
   .introduction__img-4 {
@@ -1894,6 +1933,7 @@ h6 {
 
   .use__item {
     font-size: 16px;
+    line-height: 16px;
   }
 
   .sales__flex {
@@ -1933,6 +1973,7 @@ h6 {
 @media (max-width: 549px) {
   .button-yellow {
     font-size: 14px;
+    line-height: 16px;
   }
 
   .button-yellow {
@@ -1941,6 +1982,7 @@ h6 {
 
   .use-item__text {
     font-size: 14px;
+    line-height: 16px;
   }
 
   .use-arrow {
@@ -1957,6 +1999,11 @@ h6 {
 
   .finance-arrow {
     display: none;
+  }
+
+  .main-text {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .navigation__body {
@@ -1998,8 +2045,12 @@ h6 {
   }
 
   .introduction__title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .introduction__title {
     max-width: 460px;
-    font-size: 24px;
   }
 
   .use {
@@ -2008,14 +2059,11 @@ h6 {
 
   .use__item {
     font-size: 14px;
+    line-height: 16px;
   }
 
   .sales {
     padding: 45px 0 0 0;
-  }
-
-  .sales__text {
-    font-size: 18px;
   }
 
   .sales__img {

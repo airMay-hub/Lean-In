@@ -1,0 +1,4 @@
+.main-text {
+  @include font ($main-font-family, $main-weight, $main-size, $main-height);
+  @include fontAdaptive ($main-f1, $main-f2, $main-f3, $main-f4);
+}

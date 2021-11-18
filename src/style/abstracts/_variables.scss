@@ -31,6 +31,7 @@ $fs48: 48px;
 
 // Высота строки
 $lh16: 16px;
+$lh18: 18px;
 $lh20: 20px;
 $lh30: 30px;
 $lh40: 40px;
@@ -55,6 +56,7 @@ $navigation-hover: $salmon;
 
 // Headering intro
 $intro-font-family: $open-sans;
+$intro-weight: $bold;
 $intro-size: $fs48;
 $intro-height: $lh60 / $fs48 * 100%;
 $intro-color: $white;
@@ -72,6 +74,10 @@ $main-f1: $fs18;
 $main-f2: $fs18;
 $main-f3: $fs16;
 $main-f4: $fs14;
+
+$main-lh1: $lh20;
+$main-lh2: $lh18;
+$main-lh3: $lh16;
 
 // Section headering
 $sh-font-family: $pt-sans;

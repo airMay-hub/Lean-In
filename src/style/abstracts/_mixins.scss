@@ -5,22 +5,29 @@
   line-height: $height;
 }
 
-@mixin fontAdaptive ($f1: $main-f1, $f2: $main-f2, $f3: $main-f3, $f4: $main-f4) {
+@mixin fontAdaptive ($f1: $main-f1, $lh1: $main-lh1, 
+                    $f2: $main-f2, $lh2: $main-lh2, 
+                    $f3: $main-f3, $lh3: $main-lh3, 
+                    $f4: $main-f4) {
 
   @include respond-to('max-huge') {
       font-size: $f1;
+      line-height: $lh1;
     }
 
     @include respond-to('max-large') {
       font-size: $f2;
+      line-height: $lh2;
     }
   
     @include respond-to('max-medium') {
       font-size: $f3;
+      line-height: $lh3;
     }
   
     @include respond-to('max-small') {
       font-size: $f4;
+      line-height: $lh3;
     }
 }
 
