@@ -217,21 +217,26 @@ h6 {
   position: relative;
   margin-top: -1px;
   width: 0;
-  border-top: 125px solid #f0fffd;
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
+  border-top: 125px solid white;
+  border-left: 720px solid transparent;
+  border-right: 720px solid transparent;
 }
 
-.sales-arrow__button {
+.it-arrow {
+  position: relative;
+  margin-top: -1px;
+  width: 0;
+  border-top: 125px solid white;
+  border-left: 720px solid transparent;
+  border-right: 720px solid transparent;
+}
+
+.it-arrow__button {
   position: absolute;
   top: 0;
   left: 0;
   bottom: auto;
   right: auto;
-}
-
-.indent-finance {
-  margin: 0 0 70px 0;
 }
 
 .finance-arrow {
@@ -1012,7 +1017,7 @@ h6 {
 .introduction {
   margin: 0;
   padding: 10% 0 14%;
-  width: 100%;
+  width: auto;
   height: auto;
   position: relative;
   top: 0;
@@ -1145,7 +1150,9 @@ h6 {
 }
 
 .sales {
-  padding: 85px 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f6ff), to(#f0fffd));
+  background: -o-linear-gradient(top, #f0f6ff 0%, #f0fffd 100%);
+  background: linear-gradient(180deg, #f0f6ff 0%, #f0fffd 100%);
 }
 
 .sales__flex {
@@ -1322,9 +1329,12 @@ h6 {
 
 .it {
   margin: 0 0 48px 0;
-  padding: 45px 0 0 0;
-  width: auto;
+  padding: 0;
+  width: 100%;
   height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f6ff), to(#f0fffd));
+  background: -o-linear-gradient(top, #f0f6ff 0%, #f0fffd 100%);
+  background: linear-gradient(180deg, #f0f6ff 0%, #f0fffd 100%);
 }
 
 .it__flex-column {
@@ -1619,6 +1629,18 @@ h6 {
   }
 }
 
+@media (max-width: 1440px) {
+  .sales-arrow {
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+  }
+
+  .it-arrow {
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+  }
+}
+
 @media (max-width: 1240px) {
   .button-yellow {
     font-size: 18px;
@@ -1663,11 +1685,6 @@ h6 {
   .introduction__text {
     max-width: 450px;
     font-size: 18px;
-  }
-
-  .use__item {
-    font-size: 18px;
-    line-height: 20px;
   }
 }
 
@@ -1723,11 +1740,6 @@ h6 {
   .use {
     padding: 118px 0 115px;
   }
-
-  .use__item {
-    font-size: 18px;
-    line-height: 18px;
-  }
 }
 
 @media (max-width: 955px) {
@@ -1777,16 +1789,12 @@ h6 {
     height: 70px;
   }
 
-  .sales-arrow__button {
+  .it-arrow__button {
     position: absolute;
     top: 0;
     left: 0;
     bottom: auto;
     right: auto;
-  }
-
-  .indent-finance {
-    margin: 0;
   }
 
   .finance-arrow__button {
@@ -1967,11 +1975,6 @@ h6 {
     padding: 90px 0 90px;
   }
 
-  .use__item {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
   .sales__flex {
     padding: 0;
     -webkit-box-orient: vertical;
@@ -2030,6 +2033,10 @@ h6 {
   }
 
   .sales-arrow {
+    display: none;
+  }
+
+  .it-arrow {
     display: none;
   }
 
@@ -2103,11 +2110,6 @@ h6 {
     display: none;
   }
 
-  .use__item {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
   .sales {
     padding: 45px 0 0 0;
   }
@@ -2154,6 +2156,14 @@ h6 {
 }
 
  @media (min-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1440px){
 
 @supports (-webkit-appearance:none){
 
