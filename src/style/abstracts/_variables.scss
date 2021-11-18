@@ -11,6 +11,7 @@ $breakpoints: (
 
 // Положение перевернутых треугольников
 $ab: 720 / 1440 * 100vw;
+$arrow-position: calc((100vw / 2) - 47.5px);
 
 // Шрифт
 $open-sans: 'Open Sans';
@@ -118,7 +119,7 @@ $it-link-color: $black;
 $footer-font-family: $pt-sans;
 $footer-weight: $regular;
 $footer-size: $fs16;
-$footer-hight: $lh20;
+$footer-height: $lh20;
 $footer-color: $white-grey;
 
 // Цвет фона

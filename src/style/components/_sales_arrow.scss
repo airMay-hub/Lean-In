@@ -11,5 +11,9 @@
     border-right: (720 / 1440 * 100vw) solid transparent;
   }
 
+  @include respond-to('max-medium') {
+    border-top: 100px solid $white;
+  }
+
   @include displayNone ('max-small');
 }

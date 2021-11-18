@@ -1,5 +1,4 @@
 .it-arrow {
-  position: relative;
   margin-top: -1px;
   width: 0;
   border-top: 125px solid $white;
@@ -11,14 +10,14 @@
     border-right: (720 / 1440 * 100vw) solid transparent;
   }
 
+  @include respond-to('max-medium') {
+    border-top: 100px solid $white;
+  }
+
   @include displayNone ('max-small');
 
   &__button {
-    @include position (absolute, 0, 0);
-
-    @include respond-to('max-medium') {
-      @include position (absolute, 0, 0);
-    }
+    @include position (absolute, -10px, $arrow-position);
   }
 
 }

@@ -1,6 +1,6 @@
 .main {
   @include respond-to('max-medium') {
-    margin: 77px 0 0 0; // высота шапки
+    margin: 62px 0 0 0; // высота шапки
   }
 }
 
@@ -104,12 +104,16 @@
 .use {
   padding: 126px 0 115px;
   
+  @include respond-to('max-huge') {
+    padding: 118px 0 100px;
+  }
+  
   @include respond-to('max-large') {
-    padding: 118px 0 115px;
+    padding: 115px 0 80px;
   }
 
   @include respond-to('max-medium') {
-    padding: 90px 0 90px;
+    padding: 90px 0 70px;
   }
 
   @include displayNone ('max-small');
@@ -136,19 +140,26 @@
 }
 
 .sales {
+  padding: 0 0 80px 0;
   background: $background-main-2;
 
+  @include respond-to('max-medium') {
+    padding: 0 0 60px 0;
+  }
+
   @include respond-to('max-small') {
-    padding: 45px 0 0 0;
+    padding: 0 0 30px 0;
+    background: $background-main-1;
   }
 
   &__flex {
+    @include size (auto, auto, 0 0 55px 0, 65px 0 0 0);
     @include flex();
-    margin: 0 0 55px 0;
 
     @include respond-to('max-medium') {
-      padding: 0;
       flex-direction: column;
+      margin: 0 0 35px 0;
+      padding: 45px 0 0 0;
     }
   }
 
@@ -180,10 +191,11 @@
   &__img {
     @include size (320px, 307px, 0 0 0 50px);
     flex: 0 0 320px;
-    background-image: url(../assets/img/lean_in_sales1.png);
+    @include backgroundImage (url(../assets/img/lean_in_sales1.png), 0 0, cover);
 
     @include respond-to('max-medium') {
-      margin: 0;
+      @include size (250px, 240px);
+      flex: 1 1 auto;
       align-self: center;
     }
 
@@ -195,27 +207,41 @@
 
 .finance {
   position: relative;
+  padding: 0 0 70px 0;
   
     @include respond-to('max-medium') {
-      padding: 45px 0 20px 0;
+      padding: 0 0 35px 0;
     }
   
     @include respond-to('max-small') {
-      padding: 45px 0 60px 0;
+      padding: 0;
     }
 
   &__flex {
-    padding: 0 0 40px 0;
+    padding: 80px 0 40px 0;
     @include flex ();
 
     @include respond-to('max-medium') {
+      padding: 40px 0;
       flex-direction: column;
+    }
+
+    @include respond-to('max-small') {
+      padding: 20px 0 40px 0;
+    }
+
+    @include respond-to('max-tiny') {
+      padding: 0 0 20px 0;
     }
   }
 
   &__body {
     padding: 0 50px 0 0;
     @include flex (column);
+
+    @include respond-to('max-medium') {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -237,6 +263,12 @@
     flex: 0 0 320px;
     @include size (320px, 320px);
     @include backgroundImage (url(../assets/img/Lean_in_finance.png), 0 0, cover);
+
+    @include respond-to('max-medium') {
+      flex: 1 1 auto;
+      @include size (250px, 250px);
+      margin: 0 auto;
+    }
   }
 
   &__button {
@@ -244,35 +276,65 @@
   }
 }
 
-// ! to be continued
-
 .it {
-  @include size (100%, auto, 0 0 48px 0);
+  @include size (100%, auto, 0, 0 0 220px 0);
+  position: relative;
   background: $background-main-2;
 
+  @include respond-to('max-huge') {
+    padding: 0 0 200px 0;
+  }
+
+  @include respond-to('max-medium') {
+    padding: 0 0 150px 0;
+  }
+
+  @include respond-to('max-tiny') {
+    padding: 0;
+  }
+
   &__flex-column {
-    display: flex;
-    flex-direction: column;
+    margin: 35px 0 48px 0;
+    @include flex (column);
+
+    @include respond-to('max-medium') {
+      margin: 35px 0 20px 0;
+    }
+
+    @include respond-to('max-small') {
+      margin: 0 0 20px 0;
+      padding: 40px 0 0 0;
+    }
   }
 
   &__link {
-    display: block;
-    text-decoration: underline;
     margin: 0 15px 8px auto;
+    display: block;
+    @include font ($it-link-font-family, $it-link-weight, $it-link-size, $it-link-height);
+    color: $it-link-color;
+    text-decoration: underline;
+
+    @include respond-to('max-small') {
+      font-size: 14px;
+    }
   }
 
   &__flex {
-    display: flex;
+    @include flex ();
+
+    @include respond-to('max-large') {
+      flex-direction: column;
+    }
     
   }
 
   &__body {
+    @include flex (column);
     padding: 0 40px 0 0;
-  }
 
-  &__body-flex {
-    display: flex;
-    flex-direction: column;
+    @include respond-to('max-large') {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -284,15 +346,44 @@
   }
 
   &__list {
-  }
 
-  &__img-wrap {
-    width: 320px;
   }
 
   &__img {
+    flex: 0 0 auto;
+    margin-top: 100px;
     width: 320px;
-    margin: 118px 0 0 0;
+    height: 242px;
+    @include backgroundImage (url(../assets/img/lean_in_it.png), 0 0, cover);
+    
+    @include respond-to('max-large') {
+      flex: 0 0 auto;
+      margin: 30px auto 0;
+    }
+
+    @include respond-to('max-medium') {
+      margin: 10px auto 0;
+    }
+
+    @include respond-to('max-tiny') {
+      width: 250px;
+      height: 189px;
+
+    }
+  }
+
+  &__button-up {
+    @include position (absolute, auto, $arrow-position, 85px);
+
+    @include respond-to('max-huge') {
+      bottom: 55px;
+    }
+
+    @include respond-to('max-medium') {
+      bottom: 45px;
+    }
+
+    @include displayNone ('max-small');
   }
 }
 
@@ -303,19 +394,15 @@
   }
 
   &__list {
-    width: 560px;
+    max-width: 560px;
     margin: 0 auto 0 0;
+
+    @include respond-to('max-large') {
+      max-width: 100%;
+    }
   }
 
-// !=========================
   &__item {
     text-align: justify;
-    margin: 0 0 16px;
-    padding: 0 0 0 30px;
-    background-image: url(../img/list_item.svg);
-    background-position: 0 4px;
-    background-repeat: no-repeat;
   }
 }
-
-// !=========================

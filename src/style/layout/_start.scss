@@ -1,11 +1,19 @@
 .start {
-  padding: 40px;
+  padding: 42px 40px;
   @include flex (column);
   background: $background-start;
   border-radius: 4px;
 
+  @include respond-to('max-small') {
+    border-radius: 0;
+  }
+
   &__title {
     margin: 0 0 42px 0;
+
+    @include respond-to('max-medium') {
+      margin: 0 0 35px 0;
+    }
   }
 
   &__body {

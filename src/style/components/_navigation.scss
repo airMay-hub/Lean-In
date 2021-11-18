@@ -48,7 +48,7 @@
   &__body {
 
     @include respond-to('max-medium') {
-      @include size (420px, 100%, 77px 0 0 0, 30px);
+      @include size (420px, 100%, 62px 0 0 0, 30px);
       @include position (fixed, 0, -100%);
       background-color: $background-main-1;
       transition: left  0.3s ease 0s;

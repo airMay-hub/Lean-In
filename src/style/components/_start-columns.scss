@@ -53,7 +53,7 @@
     text-transform: uppercase;
 
     @include respond-to('max-medium') {
-      font-size: 14px;
+      margin: 27px 0 15px 0;
     }
 
     @include respond-to('max-small') {

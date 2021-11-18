@@ -10,6 +10,10 @@
   &__content {
     @include size (100%, auto, auto, 27px 25px);
     @include flex (row, space-between);
+
+    @include respond-to('max-medium') {
+      padding: 20px 27px;
+    }
   }
 
   &__logo {
