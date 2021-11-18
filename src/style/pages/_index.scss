@@ -31,7 +31,7 @@
       }
     }
 
-    @include fontAdaptive (41px, 33px, 28px, 24px);
+    @include fontAdaptive ($intro-height, $intro-height, $intro-height, 41px, 33px, 28px, 24px);
     
     @include respond-to('max-medium') {
       max-width: 600px;
