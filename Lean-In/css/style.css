@@ -447,8 +447,15 @@ h6 {
       flex-wrap: nowrap;
 }
 
+.header {
+  width: 100%;
+}
+
 .header__content {
+  margin: auto;
   padding: 27px 25px;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1805,10 +1812,6 @@ h6 {
   }
 
   .navigation__body {
-    -webkit-transition: left  0.3s ease 0s;
-    -o-transition: left  0.3s ease 0s;
-    transition: left  0.3s ease 0s;
-    overflow: auto;
     margin: 77px 0 0 0;
     padding: 30px;
     width: 420px;
@@ -1818,6 +1821,11 @@ h6 {
     left: -100%;
     bottom: auto;
     right: auto;
+    background-color: white;
+    -webkit-transition: left  0.3s ease 0s;
+    -o-transition: left  0.3s ease 0s;
+    transition: left  0.3s ease 0s;
+    overflow: auto;
   }
 
   .navigation__body_active {
@@ -1832,11 +1840,11 @@ h6 {
   }
 
   .navigation__item {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     margin: 0 0 30px;
     padding: 0 0 25px;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   }
 
   .content-narrow {
