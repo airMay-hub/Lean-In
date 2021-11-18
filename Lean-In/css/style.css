@@ -541,6 +541,43 @@ h6 {
   background-repeat: no-repeat;
 }
 
+.discuss {
+  padding: 0 20px;
+  background: white;
+}
+
+.discuss__flex {
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background: #f0f6ff;
+  border-radius: 4px;
+}
+
+.discuss__text {
+  margin: 0 0 22px 0;
+}
+
+.discuss__link {
+  margin: 0 auto 0 0;
+}
+
 .start {
   padding: 40px;
   display: -webkit-box;
@@ -1300,41 +1337,6 @@ h6 {
   left: calc(100vw - 50%);
   bottom: 0;
   right: auto;
-}
-
-.discuss {
-  padding: 0 20px;
-}
-
-.discuss__flex {
-  margin: 0 auto;
-  padding: 40px;
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  border-radius: 4px;
-}
-
-.discuss__text {
-  margin: 0 0 22px 0;
-}
-
-.discuss__link {
-  margin: 0 auto 0 0;
 }
 
 .it {
