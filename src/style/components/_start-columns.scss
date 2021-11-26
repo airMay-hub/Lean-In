@@ -1,0 +1,66 @@
+.start-columns {
+  @include flex ();
+  margin: 0 0 40px 0;
+
+// чтобы нормльно смотрелось, применила 955px
+// другого придумать не смогла
+  @media (max-width: 955px) {
+    flex-direction: column;
+  }
+
+  &__item {
+    min-width: 245px;
+    margin: 0 40px 0 0;
+
+    @media (max-width: 955px) {
+      margin: 40px 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:first-child {
+
+      @media (max-width: 955px) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__img {
+    @include size (60px, 60px);
+  }
+
+  &__img-1 {
+    @include backgroundImage(url('../assets/img/training.png'), 0 0, contain);
+  }
+
+  &__img-2 {
+    @include backgroundImage(url('../assets/img/transformation.png'), 0 0, contain);
+  }
+
+  &__img-3 {
+    @include backgroundImage(url('../assets/img/project.png'), 0 0, contain);
+  }
+
+  &__title {
+    margin: 27px 0;
+    @include font ($sih-font-family, $sih-weight, $sih-size, $sih-height);
+    color: $sih-color;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @include respond-to('max-medium') {
+      margin: 27px 0 15px 0;
+    }
+
+    @include respond-to('max-small') {
+      white-space: normal;
+    }
+  }
+
+  &__text {
+  }
+}

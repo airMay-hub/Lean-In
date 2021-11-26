@@ -1,0 +1,42 @@
+.footer {
+  flex: 0 0 auto;
+  background: $background-footer;
+  
+  &__content {
+    @include flex (row, space-between, center);
+    padding: 20px 37px 40px;
+
+    @include respond-to('max-medium') {
+      padding: 20px 37px;
+    }
+
+    @include respond-to('max-small') {
+      @include flex (column, space-between, flex-start);
+    }
+  }
+
+  &__logo {
+    @include backgroundImage (url(../assets/img/logo_white.png), 0 0, contain);
+  }
+
+  &__logo {
+    margin: 0 30px auto 0;
+
+    @include respond-to('max-small') {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__body {
+    @include flex (column, center, flex-end);
+
+    @include respond-to('max-small') {
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    @include font ($footer-font-family, $footer-weight, $footer-size, $footer-height);
+    color: $footer-color;
+  }
+}

@@ -1,0 +1,41 @@
+@charset 'utf-8';
+// добавить миксин для webp изображений
+
+@import 
+  'abstracts/mixins',
+  'abstracts/variables',
+  'abstracts/placeholders';
+
+@import 
+  'base/reset',
+  'base/typeography';
+
+@import 
+  'components/button_yellow',
+  'components/use_item',
+  'components/button-up',
+  'components/sales_arrow',
+  'components/it-arrow',
+  'components/list-item',
+  'components/list-title',
+  'components/finance-arrow',
+  'components/main-text',
+  'components/logo',
+  'components/navigation',
+  'components/start-columns',
+  'components/title_section',
+  'components/wrappers';
+
+@import
+  'layout/footer',
+  'layout/header',
+  'layout/discuss',
+  'layout/start';
+
+@import
+  'pages/concept',
+  'pages/index',
+  'pages/small_business',
+  'pages/team';
+
+  

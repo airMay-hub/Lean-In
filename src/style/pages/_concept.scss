@@ -1,0 +1,478 @@
+.menu {
+  
+  &__flex {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 25px;
+}
+
+		&__item {
+      font-family: Open Sans;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #828282;
+      margin: auto 23px;
+		}
+}
+
+.why-lean {
+
+  margin: 0 0 20px 0;
+
+		&__flex {
+      display: flex;
+      flex-direction: column;
+      padding: 17px 65px 10px 78px;
+		}
+
+		&__title {
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 48px;
+      color: #121222;
+      margin: 0 0 42px 0;
+		}
+
+		&__body {
+		}
+}
+
+.why {
+
+		&__flex {
+      display: flex;
+		}
+
+		&__img-wrap {
+      width: 680px;
+      margin: 0 60px 0 0;
+		}
+
+		&__img {
+      width: 680px;
+		}
+
+		&__text {
+      font-family: Open Sans;
+      font-size: 18px;
+      line-height: 30px;
+      color: #4F4F4F;
+      margin: 35px 0 0 0;
+		}
+}
+.arrow-down-shadow {
+  width: 100%;
+  margin: 0 0 76px 0;
+
+  &__shadow {
+    width: 100%;
+  }
+}
+.before-after {
+    
+  margin: 0 0 82px;
+
+		&__flex {
+      display: flex;
+      flex-direction: column;
+      padding: 0 95px 0px 78px;
+		}
+
+		&__title {
+      margin: 0 0 49px 0;
+		}
+
+		&__aim {
+		}
+
+		&__graph {
+      padding: 0 15px 0 22px;
+		}
+
+		&__graph-bellow {
+		}
+}
+
+.aim {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -20px 80px;
+
+		&__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+		}
+
+		&__img-wrap {
+      width: 80px;
+      margin: 0 0 15px 0;
+		}
+
+		&__img {
+      width: 80px;
+		}
+
+		&__text {
+      font-family: Open Sans;
+      font-size: 18px;
+      line-height: 30px;
+      color: #4F4F4F;
+      text-align: center;
+		}
+}
+
+.graph {
+
+  margin: 0 0 10px 0;
+
+		&__flex {
+      display: flex;
+		}
+
+    &__line {
+    }
+
+    &__line-img {
+    }
+
+		&__item {
+
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      
+      &:first-child {
+        margin: 0 52px 0 0;
+      }
+
+      &:last-child {
+        margin: 0 0 0 70px;
+      }
+		}
+
+		&__title {
+      margin: 21px 0 10px 0;
+      text-align: center;
+		}
+
+		&__img-wrap {
+      width: 100%;
+		}
+
+		&__img {
+      width: 100%;
+		}
+}
+
+.bellow {
+  
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 23px 30px 23px 60px;
+  
+		&__flex {
+      display: flex;
+      flex-direction: column;
+		}
+
+		&__item {
+      display: flex;
+      align-items: center;
+
+      &:first-child{
+        margin-bottom: 16px;
+      }
+		}
+
+		&__rectangle {
+      width: 46px;
+      height: 32px;
+      margin: 0 75px 0 0;
+		}
+
+		&__text {
+      font-family: Open Sans;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+		}
+}
+
+.rectangle-1 {
+  background-color: #FDAAA4;
+}
+
+.red {
+  color: #FF4737;
+}
+
+.rectangle-2 {
+  background-color: #51BFA6;
+}
+
+.green {
+  color: #149073;
+}
+
+.learn-mistakes {
+
+  margin: 0 0 57px 0;
+
+		&__flex {
+      display: flex;
+      flex-direction: column;
+      padding: 0 76px 0 76px;
+		}
+
+		&__title {
+      margin: 0 0 25px 0;
+		}
+
+		&__text {
+      font-family: PT Sans;
+      font-size: 20px;
+      line-height: 30px;
+      color: #4f4f4f;
+		}
+}
+
+.arrow-down-mistakes {
+width: 100%;
+margin: 0 0 63px 0;
+  &__shadow {
+    width: 100%;
+  }
+}
+
+
+.philosophy {
+
+  margin: 0 0 112px 0;
+
+		&__flex {
+      display: flex;
+      padding: 0 35px 0 75px;
+		}
+
+		&__column {
+		}
+
+		&__list {
+		}
+}
+.ph-column {
+  
+
+		&__title {
+      margin: 0 0 30px 0;
+		}
+
+		&__text {
+      font-family: PT Sans;
+      font-size: 20px;
+      line-height: 30px;
+      color: #4f4f4f;
+      
+		}
+
+    &__text-1 {
+      margin: 0 0 40px 0;
+    }
+
+    &__text-2 {
+      margin: 0 0 12px 0;
+    }
+}
+.ph-list {
+  
+
+		&__item {
+      font-family: PT Sans;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1.2px;
+      color: #4f4f4f;
+      padding: 0 0 0 12px;
+      background-image: url(../img/dot.png);
+      background-repeat: no-repeat;
+      background-position: 0 12px;
+		}
+}
+.ph-img {
+
+		&__img-wrap {
+		}
+
+		&__img {
+		}
+}
+.four-industry {
+  margin: 0 0 35px 0;
+
+		&__title {
+      margin: 0 auto 25px 65px;
+		}
+
+		&__flex {
+      display: flex;
+		}
+
+		&__column {
+		}
+}
+.four-img {
+
+		&__img-wrap {
+      margin: -21px 0 0 -2px;
+		}
+
+		&__img {
+		}
+}
+.four-text {
+
+		&__text {
+      font-family: Open Sans;
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0 110px 30px 50px;
+		}
+}
+
+.arrow-blue-shadow {
+width: 100%;
+margin: 0 0 67px 0;
+  &__img {
+    width: 100%;
+  }
+}
+
+
+.FAQ {
+
+  margin: 0 0 209px 0;
+
+  &__flex {
+    padding: 0 65px 0 45px;
+  }
+
+  &__title {
+    margin: 0 0 70px 0;
+  }
+
+  &__list-wrap {
+  }
+
+  &__list {
+  }
+
+  &__item {
+    background-image: url(../img/minus.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding: 0 0 40px 60px;
+    margin: 0 0 40px 0;
+    border-bottom: 2px solid #d0d0d0;
+  }
+}
+.question {
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000000;
+    margin: 0 0 30px 0;
+  }
+
+  &__text {
+    font-family: PT Sans;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4f4f4f;
+    border-left: 2px solid #7DB3F4;
+    margin: 0 0 0 40px;
+    padding: 0 0 0 20px;
+  }
+}
+
+.darker-blue {
+background-color: #c6dff9;
+}
+.study {
+  margin: 0 0 80px 0;
+
+  &__title {
+    margin: 0 0 110px 68px;
+  }
+
+  &__body {
+    padding: 0 110px 0 70px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin: 0 0 72px 0;
+  }
+}
+.book {
+
+  &__flex {
+    display: flex;
+  }
+
+  &__img-wrap {
+    margin: 0 74px 0 0;
+  }
+
+  &__img {
+  }
+
+  &__text {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4f4f4f;
+  }
+}
+
+.find-how {
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    padding: 51px 69px;
+  }
+
+  &__text {
+    font-family: PT Sans;
+    font-size: 20px;
+    line-height: 30px;
+    color: #121222;
+    margin: 0 0 36px 0;
+  }
+
+  &__link {
+    margin: 0 auto 0 0;
+  }
+}
+

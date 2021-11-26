@@ -1,0 +1,9 @@
+.main-text {
+  @include font ($main-font-family, $main-weight, $main-size, $main-height);
+  @include fontAdaptive ($main-height, $main-height, $main-height, $main-f1, $main-f1, $main-f1, $main-f1);
+
+  @media (max-width : 425px)  {
+    font-size: $main-f3;
+    text-align: justify;
+  }
+}

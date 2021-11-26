@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  background-color: $background-main-1;
+
+  @include respond-to('max-medium') {
+    @include position (fixed);
+    z-index: 10;
+  }
+  
+  &__content {
+    @include size (100%, auto, auto, 27px 25px);
+    @include flex (row, space-between);
+
+    @include respond-to('max-medium') {
+      padding: 20px 27px;
+    }
+  }
+
+  &__logo {
+    @include backgroundImage (url(../assets/img/logo.png), 0 0, contain);
+  }
+}

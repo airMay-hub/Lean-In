@@ -1,0 +1,24 @@
+.button-yellow {
+  padding: 18px 48px;
+
+  @include font ($link-font-family, $link-weight, $link-size, $link-height);
+  
+  color: $link-color;
+  background-color: $button-background;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 4px 25px rgba(35, 36, 70, 0.5);
+  }
+  
+  @include fontAdaptive (30px, 30px, 30px);
+
+  @include respond-to('max-large') {
+    padding: 12px 34px;
+  }
+
+  @include respond-to('max-small') {
+    padding: 7px 26px;
+  }
+}

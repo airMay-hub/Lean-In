@@ -1,0 +1,22 @@
+.button-up {
+  position: relative;
+  @include size (95px, 85px);
+
+  @include respond-to('max-medium') {
+    @include size (80px, 70px);
+  }
+  
+  &__part-1 {
+    @include size (100%, 53%);
+    display: block;
+    @include position (absolute);
+    @include backgroundImage (url(../assets/img/svg/button_part_up.svg), 0 0, cover);
+  }
+
+  &__part-2 {
+    @include size (100%, 76.5%);
+    display: block;
+    @include position (absolute, auto, auto, 0, 0);
+    @include backgroundImage (url(../assets/img/svg/button_part_down.svg), 0 0, cover);
+  }
+}

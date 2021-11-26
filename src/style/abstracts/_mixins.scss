@@ -1,0 +1,106 @@
+@mixin font ($family, $weight, $size, $height) {
+  font-family: $family, 'Arial', 'Helvetica', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin fontAdaptive ($lh1: $main-lh1, $lh2: $main-lh2, $lh3: $main-lh3, 
+                  $f1: $main-f1, $f2: $main-f2, $f3: $main-f3, $f4: $main-f4) {
+
+  @include respond-to('max-huge') {
+      font-size: $f1;
+      line-height: $lh1;
+    }
+
+    @include respond-to('max-large') {
+      font-size: $f2;
+      line-height: $lh2;
+    }
+  
+    @include respond-to('max-medium') {
+      font-size: $f3;
+      line-height: $lh3;
+    }
+  
+    @include respond-to('max-small') {
+      font-size: $f4;
+      line-height: $lh3;
+    }
+}
+
+@mixin section ($background, $width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+  background-color: $background;
+}
+
+@mixin size ($width, $height: auto, $margin: 0, $padding: 0) {
+  margin: $margin;
+  padding: $padding;
+  width: $width;
+  height: $height;
+}
+
+@mixin position ($position: static, $top: 0, $left: 0, $bottom: auto, $right: auto) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin flex ($direction: row, $justify: normal, $align: normal, $wrap: nowrap, $display: flex) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin backgroundImage ($url, $position: 0 0, $size: auto auto, $repeat: no-repeat) {
+    background-image: $url;
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;
+}
+
+@mixin displayNone ($breakpoint, $display: none) {
+  @include respond-to($breakpoint) {
+    display: $display;
+  }
+}
+
+@mixin burger ($top, 
+  $height: 10%, $width: 100%, 
+  $position: absolute, $left: 0, 
+  $background: $dark-grey, 
+  $transition: all 0.3s ease 0s) {
+  height: $height;
+  width: $width;
+  position: $position;
+  top: $top;
+  left: $left;
+  background-color: $background;
+  transition: $transition;
+}
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+
+  } @else {
+  @error 'Не указано значение для `#{$breakpoint}`. '
+      + 'Пожалуйста, убедитесь, что точка останова объявлена в карте `$breakpoints`.';
+  }
+}

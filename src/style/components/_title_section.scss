@@ -1,0 +1,5 @@
+.section-title {
+  @include font ($sh-font-family, $sh-weight, $sh-size, $sh-height);
+  color: $sh-color;
+  @include fontAdaptive ($sh-height, $sh-height, $sh-height, $sh-size, 32px, 28px, 24px);
+}
