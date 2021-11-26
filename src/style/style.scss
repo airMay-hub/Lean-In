@@ -1,6 +1,10 @@
 @charset 'utf-8';
 // добавить миксин для webp изображений
 
+html {
+  scroll-behavior: smooth;
+}
+
 @import 
   'abstracts/mixins',
   'abstracts/variables',
@@ -38,4 +42,3 @@
   'pages/small_business',
   'pages/team';
 
-  
